@@ -29,11 +29,16 @@ const productSchema=new mongoose.Schema({
         require:true,
        
     },
-    desciption:{
+    description:{
         type:String,
         require:true
     },
     reviews:[reviewSchema],
+    rating:{
+        type:Number,
+        require:true,
+        default:0
+    },
     numReviews:{
         type:Number,
         require:true,
